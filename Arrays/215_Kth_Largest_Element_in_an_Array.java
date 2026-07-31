@@ -1,7 +1,6 @@
 // LeetCode 215 - Kth Largest Element in an Array
-// Difficulty: Medium
+// Difficulty: Medium level coding problem
 // https://leetcode.com/problems/kth-largest-element-in-an-array/
-
 import java.util.*;
 
 class Solution {
