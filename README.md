@@ -8,6 +8,7 @@ Welcome to my Java-based DSA preparation repository.
 - Strings
 - HashTable
 - PrefixSum
+- Two pointer
 - SlidingWindow
 - TwoPointers
 - BinarySearch
@@ -20,6 +21,7 @@ Welcome to my Java-based DSA preparation repository.
 - DynamicProgramming
 - Math
 - SQL
+  
 
 ## Purpose
 
