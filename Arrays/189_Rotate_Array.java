@@ -5,6 +5,7 @@
 // 1. Create a temporary array of the same size.
 // 2. Place each element at its new rotated position using (i + k) % n.
 // 3. Copy the temporary array back to the original array.
+//
 // Time Complexity: O(n)
 // Space Complexity: O(n)
 
