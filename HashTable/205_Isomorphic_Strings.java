@@ -1,24 +1,21 @@
-
 /*
 LeetCode 205 - Isomorphic Strings
 Difficulty: Easy
 
 Approach:
-1. Use two HashMaps to maintain character mapping in both directions.
+1. Use two HashMaps to maintain one-to-one character mapping.
 2. Traverse both strings simultaneously.
 3. If an existing mapping conflicts, return false.
-4. Otherwise, store the mapping.
-5. If the traversal completes without conflicts, return true.
+4. Otherwise, store the mapping in both directions.
+5. If no conflicts are found, return true.
 
 Time Complexity: O(n)
 Space Complexity: O(n)
 */
 
 import java.util.*;
-
 class Solution {
-
-    public static boolean isIsomorphic(String s, String t) {
+    public boolean isIsomorphic(String s, String t) {
 
         if (s.length() != t.length()) {
             return false;
@@ -28,32 +25,17 @@ class Solution {
         HashMap<Character, Character> map1 = new HashMap<>();
 
         for (int i = 0; i < s.length(); i++) {
-
             char ch = s.charAt(i);
             char c = t.charAt(i);
-
             if (map.containsKey(ch) && map.get(ch) != c) {
                 return false;
             }
-
             if (map1.containsKey(c) && map1.get(c) != ch) {
                 return false;
             }
-
             map.put(ch, c);
             map1.put(c, ch);
         }
-
         return true;
-    }
-
-    public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-
-        String s = sc.next();
-        String t = sc.next();
-
-        System.out.println(isIsomorphic(s, t));
     }
 }
