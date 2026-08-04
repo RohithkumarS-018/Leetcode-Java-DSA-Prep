@@ -19,7 +19,7 @@ class ListNode {
         this.val = val;
     }
 }
-public class Main {
+class Solution {
     public static ListNode middleNode(ListNode head) {
         if (head == null) {
             return null;
