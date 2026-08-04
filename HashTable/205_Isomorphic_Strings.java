@@ -1,3 +1,19 @@
+
+/*
+LeetCode 205 - Isomorphic Strings
+Difficulty: Easy
+
+Approach:
+1. Use two HashMaps to maintain character mapping in both directions.
+2. Traverse both strings simultaneously.
+3. If an existing mapping conflicts, return false.
+4. Otherwise, store the mapping.
+5. If the traversal completes without conflicts, return true.
+
+Time Complexity: O(n)
+Space Complexity: O(n)
+*/
+
 import java.util.*;
 
 class Solution {
