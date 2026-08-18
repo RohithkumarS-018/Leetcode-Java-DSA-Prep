@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main{
+public class Solution {
     public static List<List<String>> group(String arr[]){
         HashMap <String,List<String>> map= new HashMap<>();
         for(String b:arr){
